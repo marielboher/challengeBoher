@@ -1,0 +1,101 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #28293E;
+    height: 100%;
+    animation: slideDown 0.7s ease-out;
+}
+
+.interest h2 {
+    color: #FFFF;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-top: 10%;
+    animation: slideDown 1s ease-out;
+}
+
+.text {
+    width: 70%;
+    color: #DFE0E9;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 2%;
+    animation: slideDown 2s ease-out;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: slideDown 1.5s ease-out;
+}
+
+.list li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    animation: slideDown 2s ease-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FDF0E9;
+    padding: 5%;
+    border-radius: 1rem;
+    height: 100%;
+    width: 150px;
+    animation: slideDown 2.5s ease-out;
+}
+
+.card h4 {
+    color: #28293E;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding-inline: 3%;
+}
+
+.card p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #28293E;
+    font-weight: 200;
+    padding: 2%;
+}
+
+.icon {
+    color: #EF6D58;
+    font-size: 50px;
+    padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .interest {
+        overflow-y: auto;
+    }
+}
